@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="card">
+    <div class="search">
+      <!-- <input type="text" class="search-bar" placeholder="Search for city" spellcheck="false">
+      <button id="search-btn">Search</button> -->
+      <form method="post">
+        <input type="text" name="city" class="search-bar" placeholder="Search for city" spellcheck="false">
+        <button type="submit" name="search" id="search-btn">Search</button>
+      </form>
+    </div>
+    <div id="date"></div>
+    <div class="weather">
+      <h2 class="city_name">Kirklees</h2>
+      <h1 class="temperature">51°C</h1>
+      <div class="flex">
+        <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+        <div class="description">Cloudy</div>
+      </div>
+      <div class="humidity">Humidity: 60%</div>
+      <div class="wind_speed">Wind speed: 6.2 km/h</div>
+    </div>
+    <button id="viewdt">Past Data</button>
+    <button id="save-button">Save</button>
+  </div>
+ 
+
+  <script src="script.js"></script>
+</body>
+</div>
+
+</html>
